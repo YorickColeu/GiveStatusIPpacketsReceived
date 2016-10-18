@@ -1,6 +1,10 @@
 # GiveStatusIPpacketsReceived
 This software read a pcap file and give a status per time slot on how much was the packets length received by IP source
 
+# Prerequise
+
+Before to compile this program, you need to install the libpcap library
+
 # Compile this project
 `gcc -Wall ./src/main.c ./src/functions.c -o GiveStatusIPpacketsReceived -lpcap`
 
@@ -9,7 +13,9 @@ Give the absolute path of a pcap file as an argument to the program.
 
 Example:
 
-`./GiveStatusIPpacketsReceived /home/usrname/mycap.pcap` 
+`./GiveStatusIPpacketsReceived /home/usrname/mycap.pcap`
+
+You can use the file given as an example
 
 # Limitation
 
